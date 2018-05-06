@@ -1,0 +1,50 @@
+#main-menu {
+  background-color: $primary_color;
+  li {
+    background-color: $primary_color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    a {
+      padding: 24px 25px 21px 25px;
+      color: #ffffff;
+      white-space: nowrap;
+      font-size: 0.813rem;
+    }
+  }
+
+  .active {
+    a {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.menu-btn {
+  background-color: $primary_color;
+
+  .menu-btn-text {
+    color: #ffffff;
+  }
+}
+
+.header-support-login {
+  border-top: 1px solid $secondary-header-login-text;
+  border-bottom: 1px solid $secondary-header-login-text;
+}
+.header-support-login-wrapper {
+  font-size: 0.875rem;
+  .header-email, .register-text, .login-text {
+    color: $secondary-header-login-text;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .register-text, .login-text {
+    border-left: 1px solid $secondary-header-login-text;
+  }
+}

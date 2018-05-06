@@ -1,0 +1,271 @@
+.search-domain-section {
+  background-color: $form-section-bg-color;
+}
+
+.search-domain-form-wrapper {
+  .domain-input {
+    padding: 20px 0 20px 25px;
+    border: none;
+    width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .year-select, .domain-select {
+    padding: 22px 0 22px 20px;
+    border: none;
+    color: $form-text-color;
+    margin-bottom: 15px;
+  }
+
+  .year-select {
+    padding-right: 20px;
+  }
+
+  .domain-select {
+    padding-right: 5rem;
+  }
+
+  .search-domain-btn {
+    border: transparent;
+    padding: 20px 45px 20px 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+}
+
+.search-domain-form-description {
+  .fa-search {
+    color: $primary_color;
+    font-size: 1.688rem;
+  }
+
+  .search-domain-label-above-heading {
+    color: $section-above-headers-label-color;
+    font-size: 1.125rem;
+  }
+
+  .search-domain-heading {
+    color: $sections-headers-color;
+    font-weight: 700;
+    font-size: 1.875rem;
+  }
+}
+
+.our-benefits-section {
+
+  .benefits {
+    list-style: none;
+
+    .fa {
+      color: $icons-color;
+      font-size: 3.75rem;
+    }
+
+    .benefit-label {
+      color: $sections-headers-color;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .benefit-description {
+      color: $form-text-color;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.our-hosting-section {
+  .hostings {
+    list-style: none;
+  }
+
+  .price {
+    font-size: 3.125rem;
+    font-weight: 800;
+    color: $sections-headers-color;
+    line-height: 2.688rem;
+    &:before {
+      content: "$";
+      font-weight: 300;
+    }
+  }
+
+  .per-text {
+    color: $sections-headers-color;
+  }
+
+  .type-of-plan {
+    width: 80%;
+    background-color: $secondary-color;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.044rem;
+    padding: 15px 27px;
+    white-space: nowrap;
+  }
+
+  .hosting-characteristics {
+    color: $characteristic-text-color;
+    .characteristic {
+      margin-top: 5px;
+      &:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 13.313rem;
+        padding-top: 5px;
+        border-bottom: 0.063rem solid $characteristic-border-color;
+      }
+    }
+  }
+
+  .hosting-btn {
+    font-weight: 700;
+    padding: 17px 30px;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  .hosting-wrapper {
+    overflow: hidden;
+    border: 0.063rem solid #e1eff4;
+  }
+}
+
+.slider-section {
+  .main-slider {
+    list-style: none;
+    color: #ffffff;
+
+    .slider-content {
+      padding: 23.625rem 0 8.6875rem 0;
+    }
+
+    .slide-heading {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    .slide-sub-heading {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+
+  .slick-arrow {
+    z-index: 2;
+  }
+
+  .slick-prev {
+    left: 3%;
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f053";
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 40px;
+      padding: 27px 30px;
+    }
+  }
+
+  .slick-next {
+    right: 20%;
+
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f054";
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 40px;
+      padding: 27px 30px;
+    }
+  }
+}
+
+.my-dots {
+  position: absolute;
+  bottom: 10%;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+
+      &:hover, &:focus {
+        outline: none;
+
+        &:before {
+          opacity: 1;
+          color: $slider-active-dot-color;
+        }
+      }
+
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 1.2rem;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "\f10c";
+        text-align: center;
+        opacity: .25;
+        color: $primary_color;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+
+  .slick-active {
+    button {
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 1.2rem;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "\f10c";
+        text-align: center;
+        opacity: .75;
+        color: $slider-active-dot-color;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+}

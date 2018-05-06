@@ -1,0 +1,93 @@
+#wrapper-footer {
+ background-color: $footer-bg-color;
+
+  .logo-copyrights-wrapper {
+    color: $footer-text-color;
+    font-size: 0.875rem;
+
+    .copyright-year {
+      padding-left: 3.5rem;
+    }
+  }
+
+  .quick-links-heading, .contact-us-heading, .social-links-heading {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.044rem;
+  }
+
+  .footer-menu, ul {
+    list-style: none;
+    line-height: 1.875rem;
+    a {
+      color: $footer-text-color;
+    }
+  }
+
+  .contact-us {
+    color: $footer-text-color;
+    line-height: 1.875rem;
+
+    a {
+      color: $footer-text-color;
+    }
+    .label {
+      color: #ffffff;
+    }
+  }
+
+  .address {
+    width: 80%;
+  }
+
+  .social-links {
+    .social-link {
+      font-size: 1.5rem;
+      margin-right: 25px;
+    }
+  }
+}
+
+
+.newsletter-wrapper {
+  background-color: $form-section-bg-color;
+}
+.newsletter-form-wrapper {
+
+  .domain-input {
+    padding: 20px 0 20px 25px;
+    width: 95%;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .newsletter-btn {
+    border: transparent;
+    padding: 20px 45px 20px 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+}
+
+.newsletter-form-description {
+  .fa-envelope-o {
+    color: $primary_color;
+    font-size: 1.688rem;
+  }
+
+  .newsletter-label-above-heading {
+    color: $section-above-headers-label-color;
+    font-size: 1.125rem;
+  }
+
+  .newsletter-heading {
+    color: $sections-headers-color;
+    font-weight: 700;
+    font-size: 1.875rem;
+  }
+}
+

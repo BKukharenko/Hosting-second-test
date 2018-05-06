@@ -1,0 +1,33 @@
+body {
+  font-size: 1rem;
+  font-family: $main-font;
+}
+
+.site-btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $primary_color;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.text-above-section-header {
+  color: $section-above-headers-label-color;
+  font-size: 1.125rem;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 1.313rem;
+    padding-top: 5px;
+    border-top: 0.125rem solid $primary_color;
+  }
+}
+
+.section-header {
+  color: $sections-headers-color;
+  font-size: 1.875rem;
+  font-weight: 800;
+}

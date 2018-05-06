@@ -84,3 +84,8 @@ require get_template_directory() . '/inc/options-pages.php';
  * Load Custom Post Types.
  */
 require get_template_directory() . '/inc/custom-post-type.php';
+
+/**
+ * Load Custom Pagination.
+ */
+require get_template_directory() . '/inc/custom-pagination.php';

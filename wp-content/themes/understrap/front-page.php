@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<div class="wrapper pt-0" id="single-wrapper">
+<div class="wrapper pt-0 front-page" id="single-wrapper">
 
         <?php
         while (have_rows('home_modules')) : the_row();

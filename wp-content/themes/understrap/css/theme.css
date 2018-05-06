@@ -4779,7 +4779,7 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #656d78;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
@@ -10509,7 +10509,20 @@ body {
 .section-header {
   color: #556b72;
   font-size: 1.875rem;
-  font-weight: 800; }
+  font-weight: 800;
+  line-height: 1.938rem; }
+
+.page-banner-wrapper {
+  padding: 6.5rem 0; }
+
+.banner-content {
+  color: #ffffff; }
+  .banner-content .banner-header {
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .banner-content .banner-sub-header {
+    font-size: 1.25rem;
+    font-weight: 300; }
 
 #main-menu {
   background-color: #ff8261; }
@@ -10807,6 +10820,94 @@ body {
     color: #5278db;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
+.post .post-heading {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #556b72; }
+
+.post .post-information {
+  color: #a0a9b6; }
+  .post .post-information .post-author {
+    color: #a0a9b6;
+    padding-right: 15px; }
+
+.post .date-label {
+  border-left: 1px solid #a0a9b6;
+  padding-left: 15px; }
+
+.post .excerpt {
+  font-size: 0.875rem;
+  color: #a0a9b6; }
+
+.post .excerpt-btn {
+  border: none;
+  border-radius: 0;
+  padding: 23px 35px;
+  font-weight: 700; }
+
+.post .comments-number, .post .fa {
+  background-color: #ff8261;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 40px; }
+
+.post .comments-number {
+  padding: 8px 12px; }
+
+.post .comments-label, .post .like-label {
+  color: #a0a9b6;
+  padding-right: 15px; }
+
+.post .share-label {
+  color: #a0a9b6; }
+
+.post .post-comments-share {
+  border-top: 0.063rem solid #d6e8ee;
+  border-bottom: 0.063rem solid #d6e8ee; }
+
+.post .like {
+  border-left: 0.063rem solid #d6e8ee;
+  padding: 10px 0 10px 0; }
+  .post .like:hover {
+    cursor: pointer; }
+
+.post .share {
+  padding: 10px 0 10px 0; }
+
+.post .addtoany_shortcode {
+  display: inline; }
+
+.pagination .page-numbers {
+  font-size: 1.125rem;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 13px 15px;
+  border: 0.063rem solid #d6e8ee;
+  color: #656d78;
+  margin-bottom: 15px; }
+  .pagination .page-numbers:hover {
+    background-color: #ff8261;
+    color: #ffffff;
+    text-decoration: none; }
+
+.pagination .dots {
+  border: none; }
+  .pagination .dots:hover {
+    background-color: transparent;
+    color: #656d78; }
+
+.pagination .current {
+  background-color: #ff8261;
+  color: #ffffff; }
+
+@media (min-width: 451px) and (max-width: 577px) {
+  .post .share {
+    padding-left: 20px; } }
+
+@media (min-width: 501px) {
+  .post .share {
+    border-left: 0.063rem solid #d6e8ee; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .main-slider .slick-next {

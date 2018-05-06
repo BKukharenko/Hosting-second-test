@@ -1,4 +1,20 @@
 // Small devices (landscape phones, 576px and up)
+@media (min-width: 451px) and (max-width: 577px) {
+  .post {
+    .share {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 501px) {
+  .post {
+    .share {
+      border-left: 0.063rem solid $post-border-color;
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .main-slider {
     .slick-next {

@@ -49,3 +49,65 @@ body {
     font-weight: 300;
   }
 }
+
+.post-heading {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: $sections-headers-color;
+}
+
+.post-information {
+  color: $form-text-color;
+
+  .post-author {
+    color: $form-text-color;
+    padding-right: 15px;
+  }
+}
+
+.date-label {
+  border-left: 1px solid $form-text-color;
+  padding-left: 15px;
+}
+
+.post-comments-share {
+  border-top: 0.063rem solid $post-border-color;
+  border-bottom: 0.063rem solid $post-border-color;
+
+  .comments-number, .fa {
+    background-color: $primary_color;
+    padding: 8px;
+    color: #ffffff;
+    border-radius: 40px;
+  }
+
+  .comments-number {
+    padding: 8px 12px;
+  }
+
+  .comments-label, .like-label {
+    color: $form-text-color;
+    padding-right: 15px;
+  }
+
+  .share-label {
+    color: $form-text-color;
+  }
+
+  .like {
+    border-left: 0.063rem solid $post-border-color;
+    padding: 10px 0 10px 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .share {
+    padding: 10px 0 10px 0;
+  }
+
+  .addtoany_shortcode {
+    display: inline;
+  }
+}

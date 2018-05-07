@@ -11,36 +11,63 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_sidebar( 'footerfull' ); ?>
+<?php
+if ( is_single() ) { ?>
+    <div class="comments-form">
+        <div class="<?php echo esc_attr( $container ); ?>">
+	        <?php if ( get_theme_mod( 'comment_form_icon' ) ) { ?>
+			    <?= get_theme_mod( 'comment_form_icon' ); ?>
+	        <?php } ?>
+            <div class="blog-heading">
+		        <?php if ( get_theme_mod( 'comment_form_header_above_label' ) ) { ?>
+                    <span class="text-above-section-header text-uppercase">
+			    <?= get_theme_mod( 'comment_form_header_above_label' ); ?>
+            </span>
+		        <?php } ?>
 
+		        <?php if ( get_theme_mod( 'comment_form_header' ) ) { ?>
+                    <h2 class="section-header text-uppercase mb-5">
+				        <?= get_theme_mod( 'comment_form_header' ); ?>
+                    </h2>
+		        <?php } ?>
+            </div>
+			<?php
+			comment_form();
+			?>
+        </div>
+    </div>
+	<?php
+} else {
+	?>
 
-<div class="newsletter-wrapper py-5">
-    <div class="<?php echo esc_attr( $container ); ?>">
-        <div class="row">
-            <div class="newsletter-form-description col-md-4 col-lg-3 d-flex flex-column">
-	            <?php if ( get_field( 'icon', 'options' ) ) { ?>
-                        <?= get_field( 'icon', 'options' ); ?>
-	            <?php } ?>
-	            <?php if ( get_field( 'label_above_heading', 'options' ) ) { ?>
-                    <span class="newsletter-label-above-heading text-uppercase">
+    <div class="newsletter-wrapper py-5">
+        <div class="<?php echo esc_attr( $container ); ?>">
+            <div class="row">
+                <div class="newsletter-form-description col-md-4 col-lg-3 d-flex flex-column">
+					<?php if ( get_field( 'icon', 'options' ) ) { ?>
+						<?= get_field( 'icon', 'options' ); ?>
+					<?php } ?>
+					<?php if ( get_field( 'label_above_heading', 'options' ) ) { ?>
+                        <span class="newsletter-label-above-heading text-uppercase">
 		                <?= get_field( 'label_above_heading', 'options' ); ?>
                     </span>
-	            <?php } ?>
-	            <?php if ( get_field( 'heading', 'options' ) ) { ?>
-                    <h1 class="newsletter-heading text-uppercase">
-		                <?= get_field( 'heading', 'options' ); ?>
-                    </h1>
-	            <?php } ?>
-            </div>
-            <div class="newsletter-form-wrapper col-md-8 col-lg-9">
-                <form action="#" name="newsletter-form" class="form-inline newsletter-form mt-3">
-                    <input class="domain-input" type="text" placeholder="Enter your domain here">
-                    <input class="newsletter-btn site-btn" type="button" value="Sign Up Now">
-                </form>
+					<?php } ?>
+					<?php if ( get_field( 'heading', 'options' ) ) { ?>
+                        <h1 class="newsletter-heading text-uppercase">
+							<?= get_field( 'heading', 'options' ); ?>
+                        </h1>
+					<?php } ?>
+                </div>
+                <div class="newsletter-form-wrapper col-md-8 col-lg-9">
+                    <form action="#" name="newsletter-form" class="form-inline newsletter-form mt-3">
+                        <input class="domain-input" type="text" placeholder="Enter your domain here">
+                        <input class="newsletter-btn site-btn" type="button" value="Sign Up Now">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<?php } ?>
 
 
 <div class="wrapper" id="wrapper-footer">

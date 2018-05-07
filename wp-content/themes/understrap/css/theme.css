@@ -10524,6 +10524,46 @@ body {
     font-size: 1.25rem;
     font-weight: 300; }
 
+.post-heading {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #556b72; }
+
+.post-information {
+  color: #a0a9b6; }
+  .post-information .post-author {
+    color: #a0a9b6;
+    padding-right: 15px; }
+
+.date-label {
+  border-left: 1px solid #a0a9b6;
+  padding-left: 15px; }
+
+.post-comments-share {
+  border-top: 0.063rem solid #d6e8ee;
+  border-bottom: 0.063rem solid #d6e8ee; }
+  .post-comments-share .comments-number, .post-comments-share .fa {
+    background-color: #ff8261;
+    padding: 8px;
+    color: #ffffff;
+    border-radius: 40px; }
+  .post-comments-share .comments-number {
+    padding: 8px 12px; }
+  .post-comments-share .comments-label, .post-comments-share .like-label {
+    color: #a0a9b6;
+    padding-right: 15px; }
+  .post-comments-share .share-label {
+    color: #a0a9b6; }
+  .post-comments-share .like {
+    border-left: 0.063rem solid #d6e8ee;
+    padding: 10px 0 10px 0; }
+    .post-comments-share .like:hover {
+      cursor: pointer; }
+  .post-comments-share .share {
+    padding: 10px 0 10px 0; }
+  .post-comments-share .addtoany_shortcode {
+    display: inline; }
+
 #main-menu {
   background-color: #ff8261; }
   #main-menu li {
@@ -10821,21 +10861,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-.post .post-heading {
-  font-size: 0.875rem;
-  font-weight: 800;
-  color: #556b72; }
-
-.post .post-information {
-  color: #a0a9b6; }
-  .post .post-information .post-author {
-    color: #a0a9b6;
-    padding-right: 15px; }
-
-.post .date-label {
-  border-left: 1px solid #a0a9b6;
-  padding-left: 15px; }
-
 .post .excerpt {
   font-size: 0.875rem;
   color: #a0a9b6; }
@@ -10845,38 +10870,6 @@ body {
   border-radius: 0;
   padding: 23px 35px;
   font-weight: 700; }
-
-.post .comments-number, .post .fa {
-  background-color: #ff8261;
-  padding: 8px;
-  color: #ffffff;
-  border-radius: 40px; }
-
-.post .comments-number {
-  padding: 8px 12px; }
-
-.post .comments-label, .post .like-label {
-  color: #a0a9b6;
-  padding-right: 15px; }
-
-.post .share-label {
-  color: #a0a9b6; }
-
-.post .post-comments-share {
-  border-top: 0.063rem solid #d6e8ee;
-  border-bottom: 0.063rem solid #d6e8ee; }
-
-.post .like {
-  border-left: 0.063rem solid #d6e8ee;
-  padding: 10px 0 10px 0; }
-  .post .like:hover {
-    cursor: pointer; }
-
-.post .share {
-  padding: 10px 0 10px 0; }
-
-.post .addtoany_shortcode {
-  display: inline; }
 
 .pagination .page-numbers {
   font-size: 1.125rem;
@@ -10901,12 +10894,70 @@ body {
   background-color: #ff8261;
   color: #ffffff; }
 
+.single-post .post-content {
+  font-size: 0.875rem;
+  color: #a0a9b6; }
+
+.single-post .posts-links {
+  text-transform: uppercase; }
+  .single-post .posts-links .previous-post-link {
+    margin-right: 15px; }
+  .single-post .posts-links .previous-post-link, .single-post .posts-links .next-post-link {
+    padding: 7px 15px;
+    border: 0.063rem solid #d6e8ee;
+    color: #656d78; }
+    .single-post .posts-links .previous-post-link:hover, .single-post .posts-links .next-post-link:hover {
+      background-color: #ff8261;
+      color: #ffffff;
+      text-decoration: none; }
+
+.author-box {
+  background-color: #e7f4f8;
+  font-size: 0.875rem;
+  padding: 28px 0 38px 0; }
+  .author-box .author-img img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; }
+  .author-box .author-information .author-name {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #556b72; }
+    .author-box .author-information .author-name:before {
+      content: 'by: '; }
+  .author-box .author-information .author-description {
+    color: #a0a9b6; }
+
+.comments-form {
+  background-color: #e7f4f8;
+  padding: 4.5625rem 0; }
+  .comments-form textarea {
+    resize: none; }
+  .comments-form .form-group, .comments-form .wpcf7 .wpcf7-form p, .wpcf7 .wpcf7-form .comments-form p {
+    margin-bottom: 14px; }
+    .comments-form .form-group input, .comments-form .wpcf7 .wpcf7-form p input, .wpcf7 .wpcf7-form .comments-form p input, .comments-form .form-group textarea, .comments-form .wpcf7 .wpcf7-form p textarea, .wpcf7 .wpcf7-form .comments-form p textarea {
+      border: none;
+      border-radius: 0;
+      padding: 23px 0 23px 25px; }
+  .comments-form .form-submit {
+    text-align: right; }
+    .comments-form .form-submit #submit {
+      border-radius: 0;
+      padding: 1.0375rem 4.375rem;
+      font-size: 0.875rem;
+      font-weight: 700; }
+  .comments-form .text-above-section-header:before {
+    border-top: none; }
+  .comments-form .fa-comments-o {
+    color: #fb6b45;
+    font-size: 1.688rem; }
+
 @media (min-width: 451px) and (max-width: 577px) {
-  .post .share {
+  .post-comments-share .share {
     padding-left: 20px; } }
 
 @media (min-width: 501px) {
-  .post .share {
+  .post-comments-share .share {
     border-left: 0.063rem solid #d6e8ee; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

@@ -291,3 +291,194 @@ function footer_customizer($wp_customize) {
 	) );
 
 };
+
+//Blog Page Customizer
+add_action('customize_register', 'blog_page_customizer');
+function blog_page_customizer($wp_customize) {
+	//adding section in wordpress customizer
+	$wp_customize->add_section( 'blog_page', array(
+		'title'       => __( 'Blog Page' ),
+		'description' => __( 'Add or change banner image and headers on Blog Page' )
+	) );
+
+	$wp_customize->add_setting( 'blog_page_banner_bg', array(
+		'default'        => '',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'blog_page_banner_bg', array(
+		'label'   => 'Banner Image',
+		'section' => 'blog_page',
+		'settings'   => 'blog_page_banner_bg',
+	) ) );
+
+	$wp_customize->add_setting( 'blog_page_banner_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'blog_page_banner_header', array(
+		'label'    => 'Banner Header',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'blog_page_banner_header',
+	) );
+
+	$wp_customize->add_setting( 'blog_page_banner_sub_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'blog_page_banner_sub_header', array(
+		'label'    => 'Banner Sub-Header',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'blog_page_banner_sub_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_blog_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_blog_header', array(
+		'label'    => 'Label Above Blog Header',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'label_above_blog_header',
+	) );
+
+	$wp_customize->add_setting( 'blog_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'blog_header', array(
+		'label'    => 'Blog Header',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'blog_header',
+	) );
+
+	$wp_customize->add_setting( 'posted_by_label_blog', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'posted_by_label_blog', array(
+		'label'    => '"Posted By" label in post',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'posted_by_label_blog',
+	) );
+
+	$wp_customize->add_setting( 'date_label_blog', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'date_label_blog', array(
+		'label'    => '"Date" label in post',
+		'section'  => 'blog_page',
+		'type'     => 'text',
+		'settings' => 'date_label_blog',
+	) );
+};
+
+//Single Post Page Customizer
+
+add_action('customize_register', 'single_page_customizer');
+function single_page_customizer($wp_customize) {
+	//adding section in wordpress customizer
+	$wp_customize->add_section( 'single_page', array(
+		'title'       => __( 'Single Post Page' ),
+		'description' => __( 'Add or change banner image and headers on Single Post Page' )
+	) );
+
+	$wp_customize->add_setting( 'single_page_banner_bg', array(
+		'default'        => '',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'single_page_banner_bg', array(
+		'label'   => 'Banner Image',
+		'section' => 'single_page',
+		'settings'   => 'single_page_banner_bg',
+	) ) );
+
+	$wp_customize->add_setting( 'single_page_banner_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'single_page_banner_header', array(
+		'label'    => 'Banner Header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'single_page_banner_header',
+	) );
+
+	$wp_customize->add_setting( 'single_page_banner_sub_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'single_page_banner_sub_header', array(
+		'label'    => 'Banner Sub-Header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'single_page_banner_sub_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_single_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_single_page_header', array(
+		'label'    => 'Label Above Single Page Header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'label_above_single_page_header',
+	) );
+
+	$wp_customize->add_setting( 'single_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'single_page_header', array(
+		'label'    => 'Single Page Header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'single_page_header',
+	) );
+
+	$wp_customize->add_setting( 'posted_by_label_single', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'posted_by_label_single', array(
+		'label'    => '"Posted By" label in post',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'posted_by_label_single',
+	) );
+
+	$wp_customize->add_setting( 'date_label_single', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'date_label_single', array(
+		'label'    => '"Date" label in post',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'date_label_single',
+	) );
+
+	$wp_customize->add_setting( 'comment_form_icon', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'comment_form_icon', array(
+		'label'    => 'Comment form icon',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'comment_form_icon',
+	) );
+
+	$wp_customize->add_setting( 'comment_form_header_above_label', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'comment_form_header_above_label', array(
+		'label'    => 'Label above comment form header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'comment_form_header_above_label',
+	) );
+
+	$wp_customize->add_setting( 'comment_form_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'comment_form_header', array(
+		'label'    => 'Comment form header',
+		'section'  => 'single_page',
+		'type'     => 'text',
+		'settings' => 'comment_form_header',
+	) );
+};

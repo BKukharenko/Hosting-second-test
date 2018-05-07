@@ -89,3 +89,8 @@ require get_template_directory() . '/inc/custom-post-type.php';
  * Load Custom Pagination.
  */
 require get_template_directory() . '/inc/custom-pagination.php';
+
+/**
+ * Load Function to move textarea in comment form to the bottom.
+ */
+require get_template_directory() . '/inc/bottom-textarea-comment-form.php';

@@ -12,3 +12,5 @@ function custom_pagination() {
 		'mid_size'           => 3
 	) );
 }
+
+remove_filter('template_redirect', 'redirect_canonical');

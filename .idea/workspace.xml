@@ -6,18 +6,12 @@
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/css/theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-pagination.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_blog.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,23 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="91" selection-start-line="91" selection-end-line="93" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="single.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+            <state relative-caret-position="360">
+              <caret line="45" column="18" selection-start-line="31" selection-start-column="4" selection-end-line="45" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -52,20 +34,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/footer.php">
+      <file leaf-file-name="faq-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/faq-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+            <state relative-caret-position="402">
+              <caret line="116" column="129" selection-start-line="116" selection-start-column="129" selection-end-line="116" selection-end-column="129" />
+              <folding>
+                <element signature="e#6#119#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-comments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-comments.php">
+      <file leaf-file-name="_faq.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_faq.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+            <state relative-caret-position="401">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -74,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="398">
-              <caret line="454" column="50" selection-start-line="454" selection-start-column="33" selection-end-line="454" selection-end-column="50" />
+              <caret line="564" column="53" selection-start-line="564" selection-start-column="33" selection-end-line="564" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -82,17 +77,8 @@
       <file leaf-file-name="_single.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_single.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
+            <state relative-caret-position="1547">
               <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_blog.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_blog.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="46" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -100,8 +86,20 @@
       <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+            <state relative-caret-position="534">
+              <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider-section.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +107,8 @@
       <file leaf-file-name="_basics.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
+            <state relative-caret-position="34">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -119,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -149,32 +147,34 @@
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/enqueue.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/gulpfile.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/search-domain-section.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/our-benefits-section.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/our-hosting-section.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_home.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_footer.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/setup.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/front-page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/js/script.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_blog.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-pagination.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/bottom-textarea-comment-form.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss" />
         <option value="$PROJECT_DIR$/../skokov/wp-content/themes/understrap-child/inc/custom-comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-comments.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_single.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/js/script.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/faq-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_faq.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php" />
       </list>
     </option>
   </component>
@@ -190,7 +190,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="145" />
     <option name="y" value="74" />
     <option name="width" value="1429" />
@@ -202,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,7 +233,7 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="understrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="page-templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hosting-second-test" type="b2602c69:ProjectViewProjectNode" />
@@ -242,21 +241,14 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="understrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hosting-second-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hosting-second-test" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="understrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="page-templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,6 +259,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\hosting-second-test\wp-content\themes\understrap\sass\theme" />
+      <recent name="C:\xampp\htdocs\hosting-second-test\wp-content\themes\understrap\page-templates" />
       <recent name="C:\xampp\htdocs\hosting-second-test\wp-content\themes\understrap" />
       <recent name="C:\xampp\htdocs\hosting-second-test\wp-content\themes\understrap\inc" />
       <recent name="C:\xampp\htdocs\hosting-second-test\wp-content\themes\understrap\page-templates\modules" />
@@ -296,27 +289,27 @@
       <updated>1525525036756</updated>
       <workItem from="1525525041100" duration="29051000" />
       <workItem from="1525611000209" duration="27669000" />
-      <workItem from="1525713780106" duration="16835000" />
+      <workItem from="1525713780106" duration="16838000" />
+      <workItem from="1525785951187" duration="15345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73555000" />
+    <option name="totallyTimeSpent" value="88903000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" weight="0.3297062" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" visible="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" visible="true" weight="0.3297062" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,27 +331,6 @@
     <wordpressPath>C:\xampp\htdocs\hosting-second-test</wordpressPath>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -478,24 +450,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/search-domain-section.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/our-benefits-section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -527,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="67" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/our-hosting-section.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -562,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../final-exam-gh/wp-content/themes/understrap-child-master/inc/pagination.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -577,29 +521,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#25#32#1" expanded="true" />
-            <element signature="e#25#32#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="1547">
           <caret line="91" selection-start-line="91" selection-end-line="93" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -645,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../skokov/wp-content/themes/understrap-child/inc/custom-comments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -659,24 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/custom-comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="850">
           <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="454" column="50" selection-start-line="454" selection-start-column="33" selection-end-line="454" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -689,17 +588,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_single.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="1547">
           <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/blank.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+        <state relative-caret-position="360">
+          <caret line="45" column="18" selection-start-line="31" selection-start-column="4" selection-end-line="45" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" lean-forward="true" selection-start-column="81" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/our-benefits-section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_basics.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/inc/customizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="564" column="53" selection-start-line="564" selection-start-column="33" selection-end-line="564" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_theme_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/faq-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="116" column="129" selection-start-line="116" selection-start-column="129" selection-end-line="116" selection-end-column="129" />
+          <folding>
+            <element signature="e#6#119#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_faq.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/sass/theme/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap/page-templates/modules/slider-section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

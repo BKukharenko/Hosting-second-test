@@ -1,0 +1,68 @@
+.page-content {
+
+  .questions {
+    list-style: none;
+
+    .question-letter {
+      font-size: 1.875rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: $primary_color;
+      padding: 16px 23px;
+    }
+
+    .question {
+      font-size: 0.875rem;
+      font-weight: 800;
+      color: $sections-headers-color;
+    }
+
+    .answer {
+      color: $form-text-color;
+      font-size: 0.875rem;
+    }
+  }
+
+  .faq-page-btn {
+    font-weight: 700;
+    padding: 22px 40px;
+    font-size: 0.675rem;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  .faq-question-form-wrapper {
+    border-top: 0.063rem solid $post-border-color;
+    margin-top: 5.125rem;
+    padding-top: 4.4375rem;
+  }
+
+  .faq-question-form {
+    .required {
+      border-radius: 0;
+      padding: 23px 0 23px 23px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .questions-form-btn {
+      font-size: 0.875rem;
+      font-weight: 700;
+      border-radius: 0;
+      padding: 15px 50px;
+    }
+
+    input {
+      &::placeholder {
+        &:after {
+          content: "*";
+        }
+      }
+    }
+  }
+}

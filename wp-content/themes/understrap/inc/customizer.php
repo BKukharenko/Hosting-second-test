@@ -482,3 +482,93 @@ function single_page_customizer($wp_customize) {
 		'settings' => 'comment_form_header',
 	) );
 };
+
+//FAQ Page customizer
+add_action('customize_register', 'faq_page_customizer');
+function faq_page_customizer($wp_customize) {
+	//adding section in wordpress customizer
+	$wp_customize->add_section( 'faq_page', array(
+		'title'       => __( 'FAQ Page' ),
+		'description' => __( 'Add or change banner image and headers on FAQ Page' )
+	) );
+
+	$wp_customize->add_setting( 'faq_page_banner_bg', array(
+		'default'        => '',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'faq_page_banner_bg', array(
+		'label'   => 'Banner Image',
+		'section' => 'faq_page',
+		'settings'   => 'faq_page_banner_bg',
+	) ) );
+
+	$wp_customize->add_setting( 'faq_page_banner_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'faq_page_banner_header', array(
+		'label'    => 'Banner Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'faq_page_banner_header',
+	) );
+
+	$wp_customize->add_setting( 'faq_page_banner_sub_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'faq_page_banner_sub_header', array(
+		'label'    => 'Banner Sub-Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'faq_page_banner_sub_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_faq_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_faq_page_header', array(
+		'label'    => 'Label Above FAQ Page Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'label_above_faq_page_header',
+	) );
+
+	$wp_customize->add_setting( 'faq_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'faq_page_header', array(
+		'label'    => 'FAQ Page Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'faq_page_header',
+	) );
+
+	$wp_customize->add_setting( 'faq_btn_text', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'faq_btn_text', array(
+		'label'    => 'FAQ Button Text',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'faq_btn_text',
+	) );
+
+	$wp_customize->add_setting( 'label_above_faq_page_form_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_faq_page_form_header', array(
+		'label'    => 'Label Above FAQ Page Form Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'label_above_faq_page_form_header',
+	) );
+
+	$wp_customize->add_setting( 'faq_page_form_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'faq_page_form_header', array(
+		'label'    => 'FAQ Page Form Header',
+		'section'  => 'faq_page',
+		'type'     => 'text',
+		'settings' => 'faq_page_form_header',
+	) );
+};

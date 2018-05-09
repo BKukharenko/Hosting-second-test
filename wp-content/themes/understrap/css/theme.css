@@ -10983,7 +10983,8 @@ body {
 
 .page-content .faq-question-form .required {
   border-radius: 0;
-  padding: 23px 0 23px 23px; }
+  padding: 23px 0 23px 23px;
+  border-color: #d3e5eb; }
 
 .page-content .faq-question-form textarea {
   resize: none; }
@@ -10994,17 +10995,51 @@ body {
   border-radius: 0;
   padding: 15px 50px; }
 
-.page-content .faq-question-form input::-webkit-input-placeholder:after {
-  content: "*"; }
+.page-content .testimonials-form .required {
+  border-radius: 0;
+  padding: 23px 0 23px 23px;
+  border-color: #d3e5eb; }
 
-.page-content .faq-question-form input:-ms-input-placeholder:after {
-  content: "*"; }
+.page-content .testimonials-form textarea {
+  resize: none; }
 
-.page-content .faq-question-form input::-ms-input-placeholder:after {
-  content: "*"; }
+.page-content .testimonials-form .testimonials-form-btn {
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 15px 50px; }
 
-.page-content .faq-question-form input::placeholder:after {
-  content: "*"; }
+.page-content .testimonials-list {
+  list-style: none; }
+
+.page-content .testimonial {
+  position: relative;
+  margin-bottom: 54px; }
+  .page-content .testimonial .image-wrapper img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%; }
+  .page-content .testimonial .testimonial-wrapper {
+    border: 0.063rem solid #d3e5eb;
+    padding: 3.8125rem 2.1875rem 2.375rem 2.1875rem; }
+  .page-content .testimonial .testimonial-text {
+    color: #a0a9b6; }
+  .page-content .testimonial .testimonial-name-wrapper {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #556b72; }
+    .page-content .testimonial .testimonial-name-wrapper .testimonial-name {
+      font-size: 0.875rem;
+      font-weight: 800; }
+  .page-content .testimonial .fa {
+    position: absolute;
+    bottom: 94%;
+    left: 13%;
+    background-color: #ffffff;
+    border: 0.063rem solid #d3e5eb;
+    padding: 13px 15px;
+    font-size: 1.5rem;
+    color: #fb6b45; }
 
 @media (min-width: 451px) and (max-width: 577px) {
   .post-comments-share .share {

@@ -572,3 +572,83 @@ function faq_page_customizer($wp_customize) {
 		'settings' => 'faq_page_form_header',
 	) );
 };
+
+//Testimonials Page customizer
+add_action('customize_register', 'testimonials_page_customizer');
+function testimonials_page_customizer($wp_customize) {
+	//adding section in wordpress customizer
+	$wp_customize->add_section( 'testimonials_page', array(
+		'title'       => __( 'Testimonials Page' ),
+		'description' => __( 'Add or change banner image and headers on Testimonials Page' )
+	) );
+
+	$wp_customize->add_setting( 'testimonials_page_banner_bg', array(
+		'default'        => '',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'testimonials_page_banner_bg', array(
+		'label'   => 'Banner Image',
+		'section' => 'testimonials_page',
+		'settings'   => 'testimonials_page_banner_bg',
+	) ) );
+
+	$wp_customize->add_setting( 'testimonials_page_banner_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'testimonials_page_banner_header', array(
+		'label'    => 'Banner Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'testimonials_page_banner_header',
+	) );
+
+	$wp_customize->add_setting( 'testimonials_page_banner_sub_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'testimonials_page_banner_sub_header', array(
+		'label'    => 'Banner Sub-Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'testimonials_page_banner_sub_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_testimonials_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_testimonials_page_header', array(
+		'label'    => 'Label Above Testimonials Page Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'label_above_testimonials_page_header',
+	) );
+
+	$wp_customize->add_setting( 'testimonials_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'testimonials_page_header', array(
+		'label'    => 'Testimonials Page Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'testimonials_page_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_testimonials_page_form_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_testimonials_page_form_header', array(
+		'label'    => 'Label Above Testimonials Page Form Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'label_above_testimonials_page_form_header',
+	) );
+
+	$wp_customize->add_setting( 'testimonials_page_form_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'testimonials_page_form_header', array(
+		'label'    => 'Testimonials Page Form Header',
+		'section'  => 'testimonials_page',
+		'type'     => 'text',
+		'settings' => 'testimonials_page_form_header',
+	) );
+};

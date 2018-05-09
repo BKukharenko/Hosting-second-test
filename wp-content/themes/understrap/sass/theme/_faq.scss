@@ -44,6 +44,7 @@
     .required {
       border-radius: 0;
       padding: 23px 0 23px 23px;
+      border-color: $form-borders-color;
     }
 
     textarea {
@@ -55,14 +56,6 @@
       font-weight: 700;
       border-radius: 0;
       padding: 15px 50px;
-    }
-
-    input {
-      &::placeholder {
-        &:after {
-          content: "*";
-        }
-      }
     }
   }
 }

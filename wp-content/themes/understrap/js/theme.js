@@ -3947,4 +3947,10 @@ jQuery(document).ready(function ($) {
             $(this).find('i').replaceWith('<i class="fa fa-heart" aria-hidden="true"></i>\n');
         }
     });
+
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            horizontalOrder: true
+        });
 });

@@ -9,7 +9,9 @@ body {
   background-color: $primary_color;
 
   &:hover {
+    text-decoration: none;
     background-color: $secondary-color;
+    color: #ffffff;
   }
 }
 

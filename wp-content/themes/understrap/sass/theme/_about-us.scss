@@ -1,0 +1,127 @@
+.page-content {
+  .team-members {
+    list-style: none;
+    color: $sections-headers-color;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+
+    .member-name {
+      font-size: 0.875rem;
+      font-weight: 800;
+    }
+  }
+
+  .member-links {
+    list-style: none;
+
+    .member-link {
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .social-link {
+      padding: 8px 9px;
+      border: 0.063rem solid $post-border-color;
+      font-size: 1rem;
+      color: $team-social-icons-color;
+
+      &:hover {
+        color: $icons-color;
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .member-wrapper {
+    img {
+      min-width: 100%;
+    }
+  }
+}
+
+.details-wrapper {
+  .image-wrapper {
+    img {
+      min-width: 100%;
+    }
+  }
+
+  .details-content {
+    color: $form-text-color;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    .quote {
+      position: relative;
+      border: 0.063rem solid $post-border-color;
+      padding: 1.3625rem 1.75rem 1.3625rem 2.5rem;
+
+      &:before {
+        content: "\“";
+        font-family: "Georgia", "sans-serif";
+        font-size: 3rem;
+        font-weight: 700;
+        color: $sections-headers-color;
+        position: absolute;
+        bottom: 81%;
+        left: 1%;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.special-offers-section {
+  background-color: $form-section-bg-color;
+  padding: 6.5rem 0 7.6875rem 0;
+
+  .image-wrapper {
+    img {
+      min-height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+  }
+
+  .special-offers-wrapper {
+    font-size: 0.875rem;
+
+    .offer-title {
+      font-size: 0.875rem;
+      font-weight: 800;
+      color: $sections-headers-color;
+    }
+  }
+
+  .post-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: $form-text-color;
+    line-height: 1.5rem;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      line-height: 1.875rem;
+    }
+
+    li {
+      &:before {
+        content: "\f054";
+        font-family: "FontAwesome";
+        padding-right: 12px;
+        color: $special-offers-list-icon-color;
+      }
+    }
+
+    .offer-link {
+      align-self: flex-start;
+      font-weight: 700;
+      padding: 18px 33px;
+    }
+  }
+}

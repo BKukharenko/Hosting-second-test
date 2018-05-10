@@ -42,6 +42,17 @@
       font-size: 0.875rem;
     }
   }
+
+  .details-wrapper {
+    .details-content {
+      .quote {
+
+        &:before {
+          bottom: 76%;
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -114,6 +125,17 @@
   .page-content {
     .faq-page-btn {
       font-size: 0.875rem;
+    }
+  }
+
+  .details-wrapper {
+    .details-content {
+      .quote {
+
+        &:before {
+          bottom: 75%;
+        }
+      }
     }
   }
 }

@@ -652,3 +652,65 @@ function testimonials_page_customizer($wp_customize) {
 		'settings' => 'testimonials_page_form_header',
 	) );
 };
+
+
+//About Us Page customizer
+add_action('customize_register', 'about_us_page_customizer');
+function about_us_page_customizer($wp_customize) {
+	//adding section in wordpress customizer
+	$wp_customize->add_section( 'about_us_page', array(
+		'title'       => __( 'About Us Page' ),
+		'description' => __( 'Add or change banner image and headers on About Us Page' )
+	) );
+
+	$wp_customize->add_setting( 'about_us_page_banner_bg', array(
+		'default'        => '',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'about_us_page_banner_bg', array(
+		'label'   => 'Banner Image',
+		'section' => 'about_us_page',
+		'settings'   => 'about_us_page_banner_bg',
+	) ) );
+
+	$wp_customize->add_setting( 'about_us_page_banner_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'about_us_page_banner_header', array(
+		'label'    => 'Banner Header',
+		'section'  => 'about_us_page',
+		'type'     => 'text',
+		'settings' => 'about_us_page_banner_header',
+	) );
+
+	$wp_customize->add_setting( 'about_us_page_banner_sub_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'about_us_page_banner_sub_header', array(
+		'label'    => 'Banner Sub-Header',
+		'section'  => 'about_us_page',
+		'type'     => 'text',
+		'settings' => 'about_us_page_banner_sub_header',
+	) );
+
+	$wp_customize->add_setting( 'label_above_about_us_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'label_above_about_us_page_header', array(
+		'label'    => 'Label Above About Us Page Header',
+		'section'  => 'about_us_page',
+		'type'     => 'text',
+		'settings' => 'label_above_about_us_page_header',
+	) );
+
+	$wp_customize->add_setting( 'about_us_page_header', array(
+		'default' => ''
+	) );
+	$wp_customize->add_control( 'about_us_page_header', array(
+		'label'    => 'About Us Page Header',
+		'section'  => 'about_us_page',
+		'type'     => 'text',
+		'settings' => 'about_us_page_header',
+	) );
+};
+

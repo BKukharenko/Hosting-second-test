@@ -10494,7 +10494,9 @@ body {
   color: #ffffff;
   background-color: #ff8261; }
   .site-btn:hover {
-    background-color: #52cbf8; }
+    text-decoration: none;
+    background-color: #52cbf8;
+    color: #ffffff; }
 
 .text-above-section-header {
   color: #859aa1;
@@ -11041,6 +11043,95 @@ body {
     font-size: 1.5rem;
     color: #fb6b45; }
 
+.page-content .team-members {
+  list-style: none;
+  color: #556b72;
+  font-size: 0.875rem;
+  line-height: 1.125rem; }
+  .page-content .team-members .member-name {
+    font-size: 0.875rem;
+    font-weight: 800; }
+
+.page-content .member-links {
+  list-style: none; }
+  .page-content .member-links .member-link {
+    margin-right: 5px; }
+    .page-content .member-links .member-link:last-child {
+      margin-right: 0; }
+  .page-content .member-links .social-link {
+    padding: 8px 9px;
+    border: 0.063rem solid #d6e8ee;
+    font-size: 1rem;
+    color: #8f9fa4; }
+    .page-content .member-links .social-link:hover {
+      color: #fb6b45;
+      background-color: #52cbf8; }
+
+.page-content .member-wrapper img {
+  min-width: 100%; }
+
+.details-wrapper .image-wrapper img {
+  min-width: 100%; }
+
+.details-wrapper .details-content {
+  color: #a0a9b6;
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
+  .details-wrapper .details-content .quote {
+    position: relative;
+    border: 0.063rem solid #d6e8ee;
+    padding: 1.3625rem 1.75rem 1.3625rem 2.5rem; }
+    .details-wrapper .details-content .quote:before {
+      content: "\“";
+      font-family: "Georgia", "sans-serif";
+      font-size: 3rem;
+      font-weight: 700;
+      color: #556b72;
+      position: absolute;
+      bottom: 81%;
+      left: 1%; }
+    .details-wrapper .details-content .quote p {
+      margin-bottom: 0; }
+
+.special-offers-section {
+  background-color: #e7f4f8;
+  padding: 6.5rem 0 7.6875rem 0; }
+  .special-offers-section .image-wrapper img {
+    min-height: 100%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .special-offers-section .special-offers-wrapper {
+    font-size: 0.875rem; }
+    .special-offers-section .special-offers-wrapper .offer-title {
+      font-size: 0.875rem;
+      font-weight: 800;
+      color: #556b72; }
+  .special-offers-section .post-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #a0a9b6;
+    line-height: 1.5rem; }
+    .special-offers-section .post-content-wrapper ul {
+      padding-left: 0;
+      list-style: none;
+      line-height: 1.875rem; }
+    .special-offers-section .post-content-wrapper li:before {
+      content: "\f054";
+      font-family: "FontAwesome";
+      padding-right: 12px;
+      color: #4c515b; }
+    .special-offers-section .post-content-wrapper .offer-link {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      font-weight: 700;
+      padding: 18px 33px; }
+
 @media (min-width: 451px) and (max-width: 577px) {
   .post-comments-share .share {
     padding-left: 20px; } }
@@ -11059,7 +11150,9 @@ body {
   .main-slider .slick-next {
     right: 11%; }
   .page-content .faq-page-btn {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+  .details-wrapper .details-content .quote:before {
+    bottom: 76%; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .main-slider .slick-next {
@@ -11087,4 +11180,6 @@ body {
     width: 77%;
     margin-bottom: 0; }
   .page-content .faq-page-btn {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+  .details-wrapper .details-content .quote:before {
+    bottom: 75%; } }

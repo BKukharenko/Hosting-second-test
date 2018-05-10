@@ -85,4 +85,90 @@ function testimonials_post_type_register() {
 	register_post_type( 'testimonials', $args );
 }
 
+add_action( 'init', 'team_post_type_register' );
+/**
+ * Register a team post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function team_post_type_register() {
+	$labels = array(
+		'name'               => _x( 'Team', 'post type general name', 'understrap' ),
+		'singular_name'      => _x( 'Team member', 'post type singular name', 'understrap' ),
+		'menu_name'          => _x( 'Team', 'admin menu', 'understrap' ),
+		'name_admin_bar'     => _x( 'Team', 'add new on admin bar', 'understrap' ),
+		'add_new'            => _x( 'Add new member', 'member', 'understrap' ),
+		'add_new_item'       => __( 'Add new member', 'understrap' ),
+		'new_item'           => __( 'New member', 'understrap' ),
+		'edit_item'          => __( 'Edit member', 'understrap' ),
+		'view_item'          => __( 'View member', 'understrap' ),
+		'all_items'          => __( 'All members', 'understrap' ),
+		'search_items'       => __( 'Search members', 'understrap' ),
+		'parent_item_colon'  => __( 'Parent members:', 'understrap' ),
+		'not_found'          => __( 'No members found', 'understrap' ),
+		'not_found_in_trash' => __( 'No members found in Trash', 'understrap' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Here you can see a list of team members and add new team member or edit one of the already existed', 'understrap' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'team' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'page-attributes', 'editor', 'thumbnail')
+	);
+
+	register_post_type( 'team', $args );
+}
+
+add_action( 'init', 'special_offers_post_type_register' );
+/**
+ * Register a special offers post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function special_offers_post_type_register() {
+	$labels = array(
+		'name'               => _x( 'Special Offers', 'post type general name', 'understrap' ),
+		'singular_name'      => _x( 'Special offer', 'post type singular name', 'understrap' ),
+		'menu_name'          => _x( 'Special Offers', 'admin menu', 'understrap' ),
+		'name_admin_bar'     => _x( 'Special Offers', 'add new on admin bar', 'understrap' ),
+		'add_new'            => _x( 'Add new offer', 'offer', 'understrap' ),
+		'add_new_item'       => __( 'Add new offer', 'understrap' ),
+		'new_item'           => __( 'New offer', 'understrap' ),
+		'edit_item'          => __( 'Edit offer', 'understrap' ),
+		'view_item'          => __( 'View offer', 'understrap' ),
+		'all_items'          => __( 'All offer', 'understrap' ),
+		'search_items'       => __( 'Search offers', 'understrap' ),
+		'parent_item_colon'  => __( 'Parent offers:', 'understrap' ),
+		'not_found'          => __( 'No offers found', 'understrap' ),
+		'not_found_in_trash' => __( 'No offers found in Trash', 'understrap' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Here you can see a list of special offers and add new special offer or edit one of the already existed', 'understrap' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'offers' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'page-attributes', 'editor', 'thumbnail')
+	);
+
+	register_post_type( 'offers', $args );
+}
+
 

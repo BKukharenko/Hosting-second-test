@@ -16,6 +16,9 @@ get_header();
 	        case 'our_benefits_section' :
 		        get_template_part('page-templates/modules/our-benefits-section');
 		        break;
+	        case 'hot_and_features_section' :
+		        get_template_part('page-templates/modules/hot-and-features-section');
+		        break;
 	        case 'our_hosting_section' :
 		        get_template_part('page-templates/modules/our-hosting-section');
 		        break;

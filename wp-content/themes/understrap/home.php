@@ -1,9 +1,9 @@
 <?php
 get_header();
-$container = get_theme_mod( 'understrap_container_type' );?>
+$container = get_theme_mod( 'understrap_container_type' ); ?>
 
 <div class="page-banner-wrapper"
-     style="background: url(<?= get_theme_mod('blog_page_banner_bg') ?>) no-repeat; background-size: cover">
+     style="background: url(<?= get_theme_mod( 'blog_page_banner_bg' ) ?>) no-repeat; background-size: cover">
     <div class="<?php echo esc_attr( $container ); ?>">
         <div class="banner-content">
 			<?php if ( get_theme_mod( 'blog_page_banner_header' ) ) { ?>
@@ -40,14 +40,18 @@ $container = get_theme_mod( 'understrap_container_type' );?>
 			while ( have_posts() ) {
 				the_post(); ?>
                 <article class="post mb-5">
-                    <a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail(); ?>
-                    </a>
-                    <a href="<?php the_permalink(); ?>">
-                        <h1 class="post-heading text-uppercase mt-4">
-							<?php the_title(); ?>
-                        </h1>
-                    </a>
+					<?php if ( has_post_thumbnail() ) { ?>
+                        <a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail(); ?>
+                        </a>
+					<?php } ?>
+					<?php if ( ! empty( $post->post_title ) ) { ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <h1 class="post-heading text-uppercase mt-4">
+								<?php the_title(); ?>
+                            </h1>
+                        </a>
+					<?php } ?>
                     <div class="post-information">
 						<?php if ( get_theme_mod( 'posted_by_label_blog' ) ) { ?>
                             <span class="author-label">
@@ -71,28 +75,28 @@ $container = get_theme_mod( 'understrap_container_type' );?>
 
                     <div class="post-comments-share mt-5 row no-gutters">
                         <div class="post-comments my-auto">
-	                    <?php comments_number( '<span class="comments-number">0</span> <span class="comments-label">Comments</span>',
-		                    '<span class="comments-number">1</span> <span class="comments-label">Comment</span>',
-                            '<span class="comments-number">%</span> <span class="comments-label">Comments</span>' ); ?>
+							<?php comments_number( '<span class="comments-number">0</span> <span class="comments-label">Comments</span>',
+								'<span class="comments-number">1</span> <span class="comments-label">Comment</span>',
+								'<span class="comments-number">%</span> <span class="comments-label">Comments</span>' ); ?>
                         </div>
                         <div class="like pl-3">
                             <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            <span class="like-label"><?= __('Like', 'understrap')?></span>
+                            <span class="like-label"><?= __( 'Like', 'understrap' ) ?></span>
                         </div>
                         <div class="share pl-sm-3">
                             <i class="fa fa-share-alt" aria-hidden="true"></i>
-                            <span class="share-label"><?= __('Share:', 'understrap')?></span>
-                            <?= do_shortcode('[addtoany buttons="facebook,twitter,linkedin,google_plus"]')?>
+                            <span class="share-label"><?= __( 'Share:', 'understrap' ) ?></span>
+							<?= do_shortcode( '[addtoany buttons="facebook,twitter,linkedin,google_plus"]' ) ?>
                         </div>
                     </div>
                 </article>
 				<?php
 			} // end while
-            ?>
-        <div class="pagination row ml-3 ml-sm-0">
-           <?php custom_pagination(); ?>
-        </div>
-        <?php
+			?>
+            <div class="pagination row ml-3 ml-sm-0">
+				<?php custom_pagination(); ?>
+            </div>
+			<?php
 		} // end if
 		?>
     </div>

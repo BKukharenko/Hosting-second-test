@@ -51,17 +51,19 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row details-wrapper">
 				<?php
 				while ( have_posts() ) {
-				    the_post();?>
-                <div class="image-wrapper mb-3 mb-lg-0 col-lg-6">
-					<?php the_post_thumbnail( 'full' ); ?>
-                </div>
-                    <div class="details-content col-lg-6 d-flex flex-column">
-                        <?php the_content(); ?>
-	                    <?php if ( get_field( 'quote_text' ) ) { ?>
-                        <div class="quote mt-auto">
-	                        <?= get_field( 'quote_text' ); ?>
+					the_post(); ?>
+					<?php if ( has_post_thumbnail() ) { ?>
+                        <div class="image-wrapper mb-3 mb-lg-0 col-lg-6">
+							<?php the_post_thumbnail( 'full' ); ?>
                         </div>
-	                    <?php } ?>
+					<?php } ?>
+                    <div class="details-content col-lg-6 d-flex flex-column">
+						<?php the_content(); ?>
+						<?php if ( get_field( 'quote_text' ) ) { ?>
+                            <div class="quote mt-auto">
+								<?= get_field( 'quote_text' ); ?>
+                            </div>
+						<?php } ?>
                     </div>
 				<?php } ?>
             </div>

@@ -33,17 +33,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 					$query->the_post(); ?>
                     <li class="team-member col-sm-6 col-lg-4 col-xl-3">
                         <div class="member-wrapper py-5">
-                            <div class="image-wrapper">
-								<?php the_post_thumbnail(); ?>
-                            </div>
+							<?php if ( has_post_thumbnail() ) { ?>
+                                <div class="image-wrapper">
+									<?php the_post_thumbnail(); ?>
+                                </div>
+							<?php } ?>
                             <div class="member-info-wrapper mt-4 row no-gutters justify-content-between">
                                 <div class="member-info">
-                                    <h3 class="member-name text-uppercase mb-0"><?php the_title();?></h3>
-	                                <?php if ( get_field( 'position' ) ) { ?>
-                                    <span class="member-position">
+									<?php if ( ! empty( $post->post_title ) ) { ?>
+                                        <h3 class="member-name text-uppercase mb-0"><?php the_title(); ?></h3>
+									<?php } ?>
+									<?php if ( get_field( 'position' ) ) { ?>
+                                        <span class="member-position">
                                         <?php the_field( 'position' ); ?>
                                     </span>
-	                                <?php } ?>
+									<?php } ?>
                                 </div>
 								<?php if ( have_rows( 'member_links' ) ): ?>
                                     <ul class="member-links row ml-sm-auto pl-0 no-gutters my-auto">

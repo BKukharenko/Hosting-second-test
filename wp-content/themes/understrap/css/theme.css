@@ -10863,6 +10863,64 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
+.hot-and-features-section {
+  padding: 5.0625rem 0;
+  background-color: #fffbde; }
+  .hot-and-features-section .discount-outer-wrapper {
+    padding: 10px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    background-color: #ffffff;
+    font-weight: 800; }
+    .hot-and-features-section .discount-outer-wrapper .discount-inner-wrapper {
+      border: 3px solid #fffbde;
+      background-color: #ffffff;
+      padding: 14px 0 20px 0; }
+    .hot-and-features-section .discount-outer-wrapper .discount-percents-wrapper {
+      padding: 0 30px; }
+    .hot-and-features-section .discount-outer-wrapper .percents {
+      font-weight: 800;
+      color: #ff8261; }
+      .hot-and-features-section .discount-outer-wrapper .percents:after {
+        content: "%";
+        margin-left: -15px; }
+    .hot-and-features-section .discount-outer-wrapper .label-above-percents {
+      font-size: 0.875rem;
+      color: #97947f;
+      letter-spacing: -0.022rem;
+      padding-left: 20px; }
+  .hot-and-features-section .discount-description {
+    font-size: 1.063rem;
+    color: #556b72;
+    letter-spacing: -0.026rem; }
+    .hot-and-features-section .discount-description h3 {
+      font-size: 1.063rem;
+      font-weight: 800; }
+  .hot-and-features-section .discount-percents {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #52cbf8;
+    letter-spacing: -0.022rem; }
+  .hot-and-features-section .discount_description_label {
+    font-weight: 300; }
+  .hot-and-features-section .features-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    -webkit-columns: 2;
+            columns: 2;
+    line-height: 2.25rem;
+    margin-bottom: 0; }
+  .hot-and-features-section .features-wrapper li:before {
+    content: "\f054";
+    font-family: "FontAwesome";
+    padding-right: 12px;
+    color: #4c515b; }
+  .hot-and-features-section .features-btn {
+    margin-top: 20px;
+    padding: 22px 28px;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+
 .post .excerpt {
   font-size: 0.875rem;
   color: #a0a9b6; }
@@ -11132,6 +11190,10 @@ body {
       font-weight: 700;
       padding: 18px 33px; }
 
+@media (min-width: 432px) and (max-width: 577px) {
+  .hot-and-features-section .discount-description {
+    margin-left: 13px; } }
+
 @media (min-width: 451px) and (max-width: 577px) {
   .post-comments-share .share {
     padding-left: 20px; } }
@@ -11144,7 +11206,9 @@ body {
   .main-slider .slick-next {
     right: 12%; }
   .page-content .faq-page-btn {
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+  .hot-and-features-section .discount-description {
+    margin-left: 13px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .main-slider .slick-next {
@@ -11152,7 +11216,9 @@ body {
   .page-content .faq-page-btn {
     font-size: 0.875rem; }
   .details-wrapper .details-content .quote:before {
-    bottom: 76%; } }
+    bottom: 76%; }
+  .hot-and-features-section .discount-description {
+    margin-left: 13px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .main-slider .slick-next {
@@ -11182,4 +11248,6 @@ body {
   .page-content .faq-page-btn {
     font-size: 0.875rem; }
   .details-wrapper .details-content .quote:before {
-    bottom: 75%; } }
+    bottom: 75%; }
+  .hot-and-features-section .discount-description {
+    margin-left: 13px; } }

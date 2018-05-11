@@ -49,39 +49,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 		$args = array(
 			'posts_per_page' => - 1,
 			'post_type'      => "testimonials",
-			'post_status' => 'publish',
-            'orderby' => 'publish_date',
-            'order' => 'ASC'
+			'post_status'    => 'publish',
+			'orderby'        => 'publish_date',
+			'order'          => 'ASC'
 		);
 
 		$query = new WP_Query( $args );
 
 		if ( $query->have_posts() ) { ?>
-            <ul class="testimonials-list row pl-0 grid">
+            <ul id="testimonials-list" class="testimonials-list row pl-0 grid">
 				<?php
 				while ( $query->have_posts() ) {
 					$query->the_post(); ?>
-                    <li class="testimonial col-lg-4 grid-item">
-	                    <?php if ( get_field( 'testimonial_icon' ) ) { ?>
-		                    <?= get_field( 'testimonial_icon' ); ?>
-	                    <?php } ?>
+                    <li class="testimonial col-lg-4 grid-item lazy">
+						<?php if ( get_field( 'testimonial_icon' ) ) { ?>
+							<?= get_field( 'testimonial_icon' ); ?>
+						<?php } ?>
                         <div class="testimonial-wrapper">
                             <div class="testimonial-text">
 								<?php the_content(); ?>
                             </div>
                             <div class="row testimonial-info mt-4 no-gutters">
-                                <div class="image-wrapper">
-									<?php the_post_thumbnail(); ?>
-                                </div>
+								<?php if ( has_post_thumbnail() ) { ?>
+                                    <div class="image-wrapper">
+										<?php the_post_thumbnail(); ?>
+                                    </div>
+								<?php } ?>
                                 <div class="testimonial-name-wrapper ml-3 my-auto">
 									<?php if ( get_field( 'by_who_text' ) ) { ?>
                                         <span class="text-uppercase">
 			                            <?= get_field( 'by_who_text' ); ?>
                                     </span>
 									<?php } ?>
-                                    <h3 class="testimonial-name text-uppercase mb-0">
-										<?php the_title(); ?>
-                                    </h3>
+									<?php if ( ! empty( $post->post_title ) ) { ?>
+                                        <h3 class="testimonial-name text-uppercase mb-0">
+											<?php the_title(); ?>
+                                        </h3>
+									<?php } ?>
                                 </div>
                             </div>
                         </div>

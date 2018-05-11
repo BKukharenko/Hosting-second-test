@@ -1,4 +1,12 @@
-// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 432px) and (max-width: 577px) {
+  .hot-and-features-section {
+    .discount-description {
+      margin-left: 13px;
+    }
+  }
+}
+
 @media (min-width: 451px) and (max-width: 577px) {
   .post-comments-share {
     .share {
@@ -15,6 +23,7 @@
   }
 }
 
+// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
   .main-slider {
     .slick-next {
@@ -25,6 +34,12 @@
   .page-content {
     .faq-page-btn {
       font-size: 0.875rem;
+    }
+  }
+
+  .hot-and-features-section {
+    .discount-description {
+      margin-left: 13px;
     }
   }
 }
@@ -51,6 +66,12 @@
           bottom: 76%;
         }
       }
+    }
+  }
+
+  .hot-and-features-section {
+    .discount-description {
+      margin-left: 13px;
     }
   }
 }
@@ -136,6 +157,12 @@
           bottom: 75%;
         }
       }
+    }
+  }
+
+  .hot-and-features-section {
+    .discount-description {
+      margin-left: 13px;
     }
   }
 }

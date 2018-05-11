@@ -49,12 +49,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 				while ( have_posts() ) {
 					the_post(); ?>
                     <article class="single-post">
-                        <div class="post-image-wrapper">
-							<?php the_post_thumbnail(); ?>
-                        </div>
-                        <h1 class="post-heading text-uppercase mt-4">
-							<?php the_title(); ?>
-                        </h1>
+						<?php if ( has_post_thumbnail() ) { ?>
+                            <div class="post-image-wrapper">
+								<?php the_post_thumbnail(); ?>
+                            </div>
+						<?php } ?>
+						<?php if ( ! empty( $post->post_title ) ) { ?>
+                            <h1 class="post-heading text-uppercase mt-4">
+								<?php the_title(); ?>
+                            </h1>
+						<?php } ?>
                         <div class="post-information">
 							<?php if ( get_theme_mod( 'posted_by_label_single' ) ) { ?>
                                 <span class="author-label">
@@ -105,10 +109,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </article>
 					<?php if ( get_the_author_meta( 'description' ) ) : ?>
                         <div class="author-box mt-5 row">
-                            <div class="author-img col-md-2"><?= get_avatar( get_the_author_meta( 'user_email' ), '125' );  ?></div>
+                            <div class="author-img col-md-2"><?= get_avatar( get_the_author_meta( 'user_email' ), '125' ); ?></div>
                             <div class="author-information my-auto col-md-10">
                                 <span class="author-name"><?= get_the_author_meta( 'first_name' ); ?></span>
-                                <p class="author-description mt-2"><?= get_the_author_meta( 'description' );  ?></p>
+                                <p class="author-description mt-2"><?= get_the_author_meta( 'description' ); ?></p>
                             </div>
                         </div>
 					<?php endif; ?>

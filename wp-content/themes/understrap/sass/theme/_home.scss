@@ -269,3 +269,90 @@
     }
   }
 }
+
+.hot-and-features-section {
+  padding: 5.0625rem 0;
+  background-color: $what-is-hot-section-bg-color;
+
+  .discount-outer-wrapper {
+    padding: 10px;
+    align-self: flex-start;
+    background-color: #ffffff;
+    font-weight: 800;
+
+    .discount-inner-wrapper {
+      border: 3px solid $what-is-hot-section-bg-color;
+      background-color: #ffffff;
+      padding: 14px 0 20px 0;
+    }
+
+    .discount-percents-wrapper {
+      padding: 0 30px;
+    }
+
+    .percents {
+      font-weight: 800;
+      color: $primary_color;
+      &:after {
+        content: "%";
+        margin-left: -15px;
+      }
+    }
+
+    .label-above-percents {
+      font-size: 0.875rem;
+      color: $label-above-percents-color;
+      letter-spacing: -0.022rem;
+      padding-left: 20px;
+    }
+  }
+
+  .discount-description {
+    font-size: 1.063rem;
+    color: $sections-headers-color;
+    letter-spacing: -0.026rem;
+
+
+    h3 {
+      font-size: 1.063rem;
+      font-weight: 800;
+    }
+  }
+
+  .discount-percents {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $secondary-color;
+    letter-spacing: -0.022rem;
+  }
+
+  .discount_description_label {
+    font-weight: 300;
+  }
+
+  .features-wrapper {
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      columns: 2;
+      line-height: 2.25rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      &:before {
+        content: "\f054";
+        font-family: "FontAwesome";
+        padding-right: 12px;
+        color: $special-offers-list-icon-color;
+      }
+    }
+  }
+
+  .features-btn {
+    margin-top: 20px;
+    padding: 22px 28px;
+    align-self: flex-end;
+  }
+}

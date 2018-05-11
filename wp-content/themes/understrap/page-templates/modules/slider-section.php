@@ -2,7 +2,7 @@
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<section class="slider-section mt-3 mt-md-0" style="background: url(<?= get_sub_field( "background_image" ) ?>) no-repeat; background-size:cover">
+<section class="slider-section" style="background: url(<?= get_sub_field( "background_image" ) ?>) no-repeat; background-size:cover">
 	<?php if ( have_rows( 'slides' ) ): ?>
         <ul class="main-slider pl-0 mb-0">
 			<?php while ( have_rows( 'slides' ) ): the_row(); ?>

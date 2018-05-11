@@ -32,19 +32,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 					$query->the_post(); ?>
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6 image-wrapper">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <div class="col-sm-6 col-md-6 mt-3 mt-sm-0 post-content-wrapper">
-                                <h3 class="offer-title text-uppercase"><?php the_title(); ?></h3>
-                                <div class="offer-description">
-                                    <?php the_content(); ?>
+							<?php if ( has_post_thumbnail() ) { ?>
+                                <div class="col-sm-6 col-md-6 image-wrapper">
+									<?php the_post_thumbnail(); ?>
                                 </div>
-	                            <?php if ( get_field( 'button_text' ) ) { ?>
-                                    <a href="<?php the_permalink();?>" class="offer-link site-btn mt-auto">
-                                        <?php the_field( 'button_text' ); ?>
+							<?php } ?>
+                            <div class="col-sm-6 col-md-6 mt-3 mt-sm-0 post-content-wrapper">
+								<?php if ( ! empty( $post->post_title ) ) { ?>
+                                    <h3 class="offer-title text-uppercase"><?php the_title(); ?></h3>
+								<?php } ?>
+                                <div class="offer-description">
+									<?php the_content(); ?>
+                                </div>
+								<?php if ( get_field( 'button_text' ) ) { ?>
+                                    <a href="<?php the_permalink(); ?>" class="offer-link site-btn mt-auto">
+										<?php the_field( 'button_text' ); ?>
                                     </a>
-	                            <?php } ?>
+								<?php } ?>
                             </div>
                         </div>
                     </div>
